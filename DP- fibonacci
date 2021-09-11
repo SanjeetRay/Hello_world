@@ -28,7 +28,7 @@ public static void main(String[] args) throws Exception {
       int fibn2 = fib(n-2);
       int fibn = fibn1 + fibn2;
       
-      return fibn;
+      return fibn;  
       
   }
   
@@ -48,7 +48,7 @@ public static void main(String[] args) throws Exception {
       
       dp[n] = fibn;
       
-      return fibn;
+      return fibn;  // or return dp[n];
   }
   
   public static int fibTab(int n, int[] dp)
