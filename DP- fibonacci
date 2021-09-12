@@ -36,7 +36,8 @@ public static void main(String[] args) throws Exception {
   {
       if(n==1 || n==0)
       {
-          return n;
+          dp[n] = n
+          return dp[n];
       }
       if(dp[n]!=  -1)
       {
@@ -48,7 +49,7 @@ public static void main(String[] args) throws Exception {
       
       dp[n] = fibn;
       
-      return fibn;  // or return dp[n];
+      return dp[n];
   }
   
   public static int fibTab(int n, int[] dp)
@@ -65,7 +66,34 @@ public static void main(String[] args) throws Exception {
   }
   
   
+  //  ****** Rajneesh bahiya technique  *******
   
+  public static int fibMemoizeConvertToTabulation(int N , int[] dp)
+  {
+      /* copy the memoization function and do the below things
+         1. identify the for loop(start and end values) and put everything in for block and find the direction of dp array, i.e. how it is getting solved
+         2. remove memoization code
+         3. replace all return with continue key
+         4. replace the recursive calls with the dp equivalents
+      */    
+         
+         for(int n=0 ; n<=N; n++)
+         {
+              if(n==1 || n==0)
+              {
+                  dp[n] = n
+                  continue;              
+              }
+
+
+              int fibn1 = dp(n-1);    //fibMemoize(n-1, dp);
+              int fibn2 = dp(n-2);    //fibMemoize(n-2, dp);
+
+              int fibn = fibn1 + fibn2;
+
+              continue;
+        }
+  }
   
   
   
