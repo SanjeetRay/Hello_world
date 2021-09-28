@@ -1,6 +1,7 @@
 /*
 
-abcc
+input : abcc
+output :
 a
 b
 c
