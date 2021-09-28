@@ -1,3 +1,14 @@
+/*
+
+abcc
+a
+b
+c
+cc
+c
+
+*/
+
 import java.util.*;
 class Test2{
     public static void main(String[] args){
