@@ -2,13 +2,13 @@
  /*
      
  n1=      1 1 2 3
- n2=      * 1 1 2   ---> n2 here has 3 digits viz. 1, 1 and 2 these digits are to be multiplied with n1 one by one.
+ n2=      * 1 1 2   ---> n2 here has 3 digits viz. 1, 1 and 2 these digits are to be multiplied with n1 one by one in the given base system.
           --------
-r1=       2 2 4 6
-r2=     1 1 2 3 0
-r3=  +1 1 2 3 0 0
+r1=       2 2 4 6   ---> r1 is shifted by 0 place (x by 1)
+r2=     1 1 2 3 0   ---> notice r2 is shifted by one place to the left (x by 10)
+r3=  +1 1 2 3 0 0   ---> notice r3 is shifted by two place to the left (x by 100)
      --------------
-      1 2 5 7 7 6
+      1 2 5 7 7 6   ---> addition should be in the given base sytem
      --------------
  
  --------------------------------------------------------------------------------------------
