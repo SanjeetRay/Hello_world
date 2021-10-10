@@ -30,9 +30,12 @@ public static void main(String[] args) throws Exception {
     int[][] res = new int[r1][c2];
 
     if(c1!=r2)
-     System.out.println("Invalid input");
-    else
-    {
+     {
+         System.out.println("Invalid input");
+         return;
+     }
+    
+    
        for(int i=0;i<res.length; i++)
        {
            for(int j=0;j<res[0].length; j++)
@@ -41,7 +44,7 @@ public static void main(String[] args) throws Exception {
                 res[i][j] += arr1[i][k]*arr2[k][j];
            }
        }
-    }
+    
     
     for(int i=0;i<res.length; i++)
        {
@@ -52,6 +55,6 @@ public static void main(String[] args) throws Exception {
            System.out.println();
        }
     
- }
+}
 
 }
