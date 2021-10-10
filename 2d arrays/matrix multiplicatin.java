@@ -24,7 +24,7 @@ public static void main(String[] args) throws Exception {
     {
         for(int j=0; j<c2; j++)
         {
-            arr1[i][j] = scn.nextInt();
+            arr2[i][j] = scn.nextInt();
         }
     }
     int[][] res = new int[r1][c2];
@@ -35,7 +35,7 @@ public static void main(String[] args) throws Exception {
     {
        for(int i=0;i<res.length; i++)
        {
-           for(intj=0;j<res[0].length; j++)
+           for(int j=0;j<res[0].length; j++)
            {
                for(int k=0; k<c1; k++)
                 res[i][j] += arr1[i][k]*arr2[k][j];
@@ -45,9 +45,9 @@ public static void main(String[] args) throws Exception {
     
     for(int i=0;i<res.length; i++)
        {
-           for(intj=0;j<res[0].length; j++)
+           for(int j=0;j<res[0].length; j++)
            {
-              System.out.print(res[i][j]+"\t");
+              System.out.print(res[i][j]+" ");
            }
            System.out.println();
        }
