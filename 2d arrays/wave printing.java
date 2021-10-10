@@ -5,8 +5,6 @@
  5  6  7  8
  9 10 11 12
 
- */
-/* 
 
 row wise output --> 1 2 3 4 8 7 6 5 9 10 11 12
 column wise output --> 1 5 9 10 6 2 3 7 11 12 8 4
