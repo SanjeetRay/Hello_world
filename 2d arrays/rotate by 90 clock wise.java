@@ -1,3 +1,25 @@
+/*
+   1. Transpose the matrix
+   2. Reverse the values in rows of transforse matrix and we will get 90 clockwise rotated array.
+   
+   
+                             ----->
+  input matrix -->   {1, 2, 3, 4}, |                      1 5 9  13
+                     {5, 6, 7, 8}, |        transpose-->  2 6 10 14
+                     {9,10,11,12}, V                      3 7 11 15
+                     {13,14,15,16}                        4 8 12 16
+
+
+   Ansr matrix
+   
+    13  9 5 1
+    14 10 6 2
+    15 11 7 3
+    16 12 8 4
+   
+  ****** NOTE --> for 90 anticlockwise just do the step 1 and reverse the elements of columns.******
+                           
+ */
 import java.io.*;
 import java.util.*;
 
