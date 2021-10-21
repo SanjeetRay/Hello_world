@@ -1,3 +1,8 @@
+/*
+
+ Output : [hhvv, hvhv, hvvh, vhhv, vhvh, vvhh]
+
+*/
 package com.user;
 
 import java.util.ArrayList;
