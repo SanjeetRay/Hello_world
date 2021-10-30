@@ -1,3 +1,12 @@
+/*
+
+655196
+
+Output :
+feeaif
+feesf
+
+*/
 import java.io.*;
 import java.util.*;
 
