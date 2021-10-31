@@ -64,20 +64,23 @@ class Solution {
     public int numDecodingRec(StringBuilder sb, int idx, StringBuilder ans, int[] dp)
     {
         if(idx==sb.length())
-            return dp[idx] = 1;
+        {
+          //System.out.println(ans);
+          return dp[idx] = 1;
+        }
         char ch1 = sb.charAt(idx);
-        int chval1 = ch1 -'0';
-        if(chval1==0)
+        int num1 = ch1 -'0';    // converting from character '1' to integer 1 by subtracting ascii value of '1' from ascii value of '0' i.e. 49(ascii of 1)-48(ascii of 0) =1.
+        if(num11==0)
           return 0;
         if(dp[idx]!=-1)
             return dp[idx];
         int count =0; 
-        char code = (char)('a'+ (chval1-1));
+        char code = (char)('a'+ (num1-1));
         count += numDecodingRec(sb, idx+1, ans.append(code), dp);
         if(idx<sb.length()-1){           // checking if the 2 length string is available to call further or not.
-            int chval2 = (sb.charAt(idx)-'0')*10 + (sb.charAt(idx+1) -'0') ;
-            if(chval2<=26){
-                char code2 = (char)('a'+ (chval2-1));
+            int num2 = (sb.charAt(idx)-'0')*10 + (sb.charAt(idx+1) -'0') ;
+            if(num2<=26){
+                char code2 = (char)('a'+ (num2-1));
                 count += numDecodingRec(sb, idx+2, ans.append(code2), dp);
             }
         }
