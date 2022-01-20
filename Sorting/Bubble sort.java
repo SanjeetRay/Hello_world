@@ -1,4 +1,4 @@
-package com.user;
+// T(n) = On^2
 
 public class Student{  
 
