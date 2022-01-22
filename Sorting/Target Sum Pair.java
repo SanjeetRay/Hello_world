@@ -15,7 +15,32 @@ public class Main {
 	 *   }
 	 * }
 	 * 
-	 */
+	 *method 2 by using binary search(O(logN) time complexity)
+	 *for(int i=0; i<arr.length; i++)
+	 *{
+	 *  int tar = Target-arr[i];
+	 *
+	 *  left = i+1;
+	 *  right = arr.length-1;
+	 *  while(left<=right)
+	 *  {
+	 *    mid = (left+right)/2;
+	 *    if(tar<arr[mid])
+	 *     {
+	 *       mid=right-1;
+	 *     } 
+	 *    else if(tar>arr[mid])
+	 *     {
+	 *       mid=right+1;
+	 *     }
+	 *    else
+	 *     {
+	 *       System.out.println(arr[left]+" "+arr[right];
+	 *       break;
+	 *     }
+	 *   }    
+	 *
+	*/
   
 	// nlogn method, using Arrays.sort and then a for loop
 	public static void main(String[] args) {
